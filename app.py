@@ -7,20 +7,6 @@ Created on Tue Jan 27 17:32:56 2026
 
 import streamlit as st
 
-# ---------- Safe Background Color ----------
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #f0f8ff;  /* Light blue */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
 st.set_page_config(page_title="The Smart Student App", layout="centered")
 
 st.title("🎓 The Smart Student App")
@@ -83,6 +69,7 @@ with tab2:
         total += amount
 
     st.info(f"💸 Total Spent: R{total:.2f}")
+
 
 
 
