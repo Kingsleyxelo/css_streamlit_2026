@@ -4,29 +4,21 @@ Created on Tue Jan 27 17:32:56 2026
 
 @author: BBarsch
 """
+
+import streamlit as st
+
+# ---------- Safe Background Color ----------
 st.markdown(
     """
     <style>
-    /* Style the Streamlit tabs */
-    .stTabs button {
-        background-color: #d0ebff;  /* Soft blue for tabs */
-        border-radius: 10px;
+    .stApp {
+        background-color: #f0f8ff;  /* Light blue */
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-import streamlit as st
-# ---------- Simple Background Color ----------
-page_bg_color = """
-<style>
-.stApp {
-background-color: #f0f8ff;  /* Light blue, you can change it */
-}
-</style>
-"""
-st.markdown(page_bg_color, unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="The Smart Student App", layout="centered")
@@ -91,5 +83,6 @@ with tab2:
         total += amount
 
     st.info(f"💸 Total Spent: R{total:.2f}")
+
 
 
