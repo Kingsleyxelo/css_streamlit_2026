@@ -4,17 +4,6 @@ Created on Tue Jan 27 17:32:56 2026
 
 @author: BBarsch
 """
-# ---------- Background Color ----------
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #f0f8ff;  /* Light blue background */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 st.markdown(
     """
     <style>
@@ -29,6 +18,16 @@ st.markdown(
 )
 
 import streamlit as st
+# ---------- Simple Background Color ----------
+page_bg_color = """
+<style>
+.stApp {
+background-color: #f0f8ff;  /* Light blue, you can change it */
+}
+</style>
+"""
+st.markdown(page_bg_color, unsafe_allow_html=True)
+
 
 st.set_page_config(page_title="The Smart Student App", layout="centered")
 
@@ -92,4 +91,5 @@ with tab2:
         total += amount
 
     st.info(f"💸 Total Spent: R{total:.2f}")
+
 
