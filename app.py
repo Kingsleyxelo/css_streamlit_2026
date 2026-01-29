@@ -4,6 +4,29 @@ Created on Tue Jan 27 17:32:56 2026
 
 @author: BBarsch
 """
+# ---------- Background Color ----------
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #f0f8ff;  /* Light blue background */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <style>
+    /* Style the Streamlit tabs */
+    .stTabs button {
+        background-color: #d0ebff;  /* Soft blue for tabs */
+        border-radius: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 import streamlit as st
 
@@ -69,3 +92,4 @@ with tab2:
         total += amount
 
     st.info(f"💸 Total Spent: R{total:.2f}")
+
