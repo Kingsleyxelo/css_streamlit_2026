@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 27 17:32:56 2026
-
-@author: BBarsch
-"""
-
 import streamlit as st
 
 st.set_page_config(page_title="The Smart Student App", layout="centered")
